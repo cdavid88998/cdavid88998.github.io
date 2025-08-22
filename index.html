@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>大阪 5 天 4 夜｜完整行程導覽</title>
+<meta name="description" content="大阪 5 天 4 夜完整行程：USJ、勝尾寺、木津市場、大阪城、心齋橋、新世界。明亮設計、清晰圖片、快速導覽。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* 明亮配色方案 */
+  --primary:#ff6b7a; /* 櫻花粉 */
+  --secondary:#4a9eff; /* 天空藍 */
+  --accent:#ffa726; /* 暖橙色 */
+  --success:#66bb6a; /* 清新綠 */
+  --purple:#9c27b0; /* 紫色 */
+  --bg:#fafbfc; /* 淺灰白 */
+  --white:#ffffff;
+  --text:#2c3e50; /* 深藍灰 */
+  --text-light:#546e7a; /* 中性灰 */
+  --border:#e3f2fd; /* 淡藍邊框 */
+  --shadow:0 4px 20px rgba(74,158,255,.15);
+  --shadow-hover:0 8px 30px rgba(74,158,255,.25);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","Poppins",system-ui,-apple-system,sans-serif;
+  color:var(--text);
+  background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment:fixed;
+  line-height:1.6;
+}
+
+/* 英雄區 - 明亮漸層 */
+.hero{
+  position:relative;
+  min-height:80vh;
+  background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:60px 20px;
+  text-align:center;
+  color:white;
+}
+
+.hero::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><radialGradient id="a"><stop offset="0" stop-color="%23FFF" stop-opacity="0"/><stop offset="1" stop-color="%23FFF" stop-opacity="1"/></radialGradient></defs><circle fill="url(%23a)" cx="10" cy="10" r="10"/></svg>') repeat;
+  opacity:0.1;
+  animation:float 20s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%, 100%{transform:translateY(0px)}
+  50%{transform:translateY(-20px)}
+}
+
+.hero-content{
+  max-width:800px;
+  z-index:2;
+}
+
+.hero h1{
+  margin:0 0 20px;
+  font-size:clamp(32px,5vw,56px);
+  font-weight:700;
+  text-shadow:0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero p{
+  margin:0 0 30px;
+  font-size:clamp(16px,2.5vw,20px);
+  opacity:0.9;
+}
+
+.hero-badges{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.hero-badge{
+  background:rgba(255,255,255,0.2);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.3);
+  padding:10px 20px;
+  border-radius:25px;
+  font-size:14px;
+  font-weight:500;
+}
+
+/* 主要導航 */
+.main-nav{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:var(--white);
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  backdrop-filter:blur(10px);
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  overflow-x:auto;
+  padding:15px 20px;
+  gap:15px;
+}
+
+.nav-item{
+  color:var(--text);
+  text-decoration:none;
+  white-space:nowrap;
+  padding:10px 20px;
+  border-radius:25px;
+  background:var(--bg);
+  border:2px solid var(--border);
+  font-weight:500;
+  transition:all 0.3s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.nav-item::before{
+  content:'';
+  position:absolute;
+  top:0;left:-100%;right:100%;bottom:0;
+  background:linear-gradient(90deg, var(--primary), var(--secondary));
+  transition:all 0.3s ease;
+  z-index:-1;
+}
+
+.nav-item:hover{
+  color:white;
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-hover);
+}
+
+.nav-item:hover::before{
+  left:0;right:0;
+}
+
+/* 內容區 */
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:40px 20px 100px;
+  background:var(--white);
+  margin-top:-50px;
+  border-radius:30px 30px 0 0;
+  position:relative;
+  z-index:10;
+}
+
+/* 每日卡片 */
+.day-card{
+  background:var(--white);
+  border-radius:20px;
+  margin-bottom:30px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  border:2px solid var(--border);
+  transition:all 0.3s ease;
+}
+
+.day-card:hover{
+  box-shadow:var(--shadow-hover);
+  transform:translateY(-5px);
+}
+
+.day-header{
+  background:linear-gradient(135deg, var(--primary), var(--accent));
+  color:white;
+  padding:25px 30px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.day-info h3{
+  margin:0 0 8px;
+  font-size:24px;
+  font-weight:700;
+}
+
+.day-info p{
+  margin:0;
+  opacity:0.9;
+  font-size:16px;
+}
+
+.toggle-btn{
+  background:rgba(255,255,255,0.2);
+  border:none;
+  color:white;
+  padding:12px 20px;
+  border-radius:15px;
+  font-weight:600;
+  cursor:pointer;
+  backdrop-filter:blur(10px);
+  transition:all 0.3s ease;
+}
+
+.toggle-btn:hover{
+  background:rgba(255,255,255,0.3);
+}
+
+/* 景點網格 */
+.day-content{
+  padding:30px;
+  display:none;
+}
+
+.day-card.expanded .day-content{
+  display:block;
+  animation:slideDown 0.5s ease;
+}
+
+@keyframes slideDown{
+  from{opacity:0;transform:translateY(-20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.spots-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  gap:20px;
+}
+
+.spot-card{
+  background:var(--bg);
+  border-radius:15px;
+  overflow:hidden;
+  border:2px solid var(--border);
+  transition:all 0.3s ease;
+}
+
+.spot-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+.spot-image{
+  width:100%;
+  height:180px;
+  background:linear-gradient(45deg, #f0f0f0, #e0e0e0);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:48px;
+  position:relative;
+  overflow:hidden;
+}
+
+.spot-image::before{
+  content:'';
+  position:absolute;
+  top:50%;left:50%;
+  width:100px;height:100px;
+  background:rgba(255,255,255,0.1);
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  animation:pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse{
+  0%,100%{transform:translate(-50%,-50%) scale(1)}
+  50%{transform:translate(-50%,-50%) scale(1.1)}
+}
+
+.spot-content{
+  padding:20px;
+}
+
+.spot-title{
+  margin:0 0 10px;
+  font-size:18px;
+  font-weight:600;
+  color:var(--text);
+}
+
+.spot-meta{
+  display:flex;
+  gap:10px;
+  margin:10px 0;
+  flex-wrap:wrap;
+}
+
+.tag{
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:500;
+  color:white;
+}
+
+.tag.transport{background:var(--secondary)}
+.tag.food{background:var(--accent)}
+.tag.shop{background:var(--success)}
+.tag.attraction{background:var(--primary)}
+
+.spot-time{
+  color:var(--text-light);
+  font-size:14px;
+  margin:8px 0;
+  font-weight:500;
+}
+
+.spot-desc{
+  color:var(--text-light);
+  font-size:14px;
+  line-height:1.5;
+  margin:10px 0;
+}
+
+.spot-actions{
+  display:flex;
+  gap:10px;
+  margin-top:15px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:8px 16px;
+  border-radius:20px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+  transition:all 0.3s ease;
+  border:2px solid;
+  text-align:center;
+}
+
+.btn-primary{
+  background:var(--primary);
+  color:white;
+  border-color:var(--primary);
+}
+
+.btn-primary:hover{
+  background:white;
+  color:var(--primary);
+  transform:translateY(-2px);
+}
+
+.btn-outline{
+  background:transparent;
+  color:var(--text);
+  border-color:var(--border);
+}
+
+.btn-outline:hover{
+  background:var(--text);
+  color:white;
+}
+
+/* 快速導航 */
+.quick-nav{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:1000;
+}
+
+.quick-day{
+  display:block;
+  width:60px;
+  height:60px;
+  background:var(--white);
+  color:var(--text);
+  text-decoration:none;
+  border-radius:50%;
+  margin-bottom:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  box-shadow:var(--shadow);
+  transition:all 0.3s ease;
+  border:2px solid var(--border);
+}
+
+.quick-day:hover{
+  background:var(--primary);
+  color:white;
+  transform:scale(1.1);
+  box-shadow:var(--shadow-hover);
+}
+
+/* 頁尾 */
+.footer{
+  background:var(--text);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+  margin-top:50px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px){
+  .hero h1{font-size:28px}
+  .hero p{font-size:16px}
+  .hero-badges{gap:10px}
+  .hero-badge{padding:8px 15px;font-size:12px}
+  .container{padding:30px 15px 80px}
+  .day-header{padding:20px;flex-direction:column;gap:15px}
+  .day-content{padding:20px}
+  .spots-grid{grid-template-columns:1fr}
+  .quick-nav{right:15px;bottom:15px}
+  .quick-day{width:50px;height:50px}
+}
+
+/* 頁面載入動畫 */
+.fade-in{
+  opacity:0;
+  transform:translateY(30px);
+  transition:all 0.8s ease;
+}
+
+.fade-in.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+</style>
+</head>
+<body>
+
+<!-- 英雄區 -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>🌸 大阪 5 天 4 夜 🏯</h1>
+    <p>完美平衡：65% 景點探索 + 35% 購物血拼<br>
+    必訪：日本環球影城 • 勝尾寺 • 木津市場 • 大阪城 • 心齋橋</p>
+    <div class="hero-badges">
+      <div class="hero-badge">🏨 Premier Hotel CABIN PRESIDENT</div>
+      <div class="hero-badge">✈️ CX564/565 國泰航空</div>
+      <div class="hero-badge">📅 2025/10/02 - 10/06</div>
+    </div>
+  </div>
+</section>
+
+<!-- 主導航 -->
+<nav class="main-nav">
+  <div class="nav-container">
+    <a href="#day1" class="nav-item">Day 1 • 抵達難波</a>
+    <a href="#day2" class="nav-item">Day 2 • 環球影城</a>
+    <a href="#day3" class="nav-item">Day 3 • 自駕勝尾寺</a>
+    <a href="#day4" class="nav-item">Day 4 • 大阪城</a>
+    <a href="#day5" class="nav-item">Day 5 • 新世界</a>
+  </div>
+</nav>
+
+<!-- 內容區 -->
+<div class="container">
+
+  <!-- Day 1 -->
+  <div id="day1" class="day-card fade-in">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-info">
+        <h3>Day 1 • 抵達與首次探索</h3>
+        <p>關西機場 → 南森町入住 → Onitsuka Tiger 難波 → 燒肉晚餐</p>
+      </div>
+      <button class="toggle-btn">展開詳情</button>
+    </div>
+    <div class="day-content">
+      <div class="spots-grid">
+        <div class="spot-card">
+          <div class="spot-image">🛬</div>
+          <div class="spot-content">
+            <h4 class="spot-title">關西機場抵達</h4>
+            <div class="spot-meta">
+              <span class="tag transport">交通</span>
+            </div>
+            <div class="spot-time">14:55 降落</div>
+            <p class="spot-desc">南海特急 Rapi:t → 難波 → 地鐵南森町，約 1 小時抵達飯店</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">機場交通</a>
+              <a href="#" class="btn btn-outline">票價查詢</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="spot-card">
+          <div class="spot-image">🏨</div>
+          <div class="spot-content">
+            <h4 class="spot-title">Premier Hotel CABIN</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">住宿</span>
+            </div>
+            <div class="spot-time">17:00 入住</div>
+            <p class="spot-desc">南森町站步行 1 分鐘，地理位置絕佳，附近有 24 小時超市</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">飯店導航</a>
+              <a href="#" class="btn btn-outline">設施資訊</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">👟</div>
+          <div class="spot-content">
+            <h4 class="spot-title">Onitsuka Tiger 難波店</h4>
+            <div class="spot-meta">
+              <span class="tag shop">購物</span>
+            </div>
+            <div class="spot-time">18:00-19:30</div>
+            <p class="spot-desc">經典鬼塚虎運動鞋與限定配色，日本製品質精良</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">門市導航</a>
+              <a href="#" class="btn btn-outline">營業時間</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🥩</div>
+          <div class="spot-content">
+            <h4 class="spot-title">自然とお肉 green</h4>
+            <div class="spot-meta">
+              <span class="tag food">晚餐</span>
+            </div>
+            <div class="spot-time">20:30 已訂位</div>
+            <p class="spot-desc">嚴選和牛七輪燒肉，完美的旅程首晚慶祝</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">餐廳導航</a>
+              <a href="#" class="btn btn-outline">確認訂位</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div id="day2" class="day-card fade-in">
+    <div class="day-header" onclick="toggleDay(this)" style="background:linear-gradient(135deg, #ff6b7a, #ffa726)">
+      <div class="day-info">
+        <h3>Day 2 • 日本環球影城</h3>
+        <p>USJ 全天遊玩：任天堂世界™ • 哈利波特™ • 小小兵樂園</p>
+      </div>
+      <button class="toggle-btn">展開詳情</button>
+    </div>
+    <div class="day-content">
+      <div class="spots-grid">
+        <div class="spot-card">
+          <div class="spot-image">🚃</div>
+          <div class="spot-content">
+            <h4 class="spot-title">前往 USJ</h4>
+            <div class="spot-meta">
+              <span class="tag transport">交通</span>
+            </div>
+            <div class="spot-time">07:30 出發</div>
+            <p class="spot-desc">JR 環狀線 → 西九條 → 櫻島線直達，08:00 前抵達搶頭香</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">交通路線</a>
+              <a href="#" class="btn btn-outline">開園時間</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🎢</div>
+          <div class="spot-content">
+            <h4 class="spot-title">超級任天堂世界™</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">必玩</span>
+            </div>
+            <div class="spot-time">08:00-12:00</div>
+            <p class="spot-desc">瑪利歐卡丁車、耀西冒險、互動手環收集金幣</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">攻略指南</a>
+              <a href="#" class="btn btn-outline">快速通關</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">⚡</div>
+          <div class="spot-content">
+            <h4 class="spot-title">哈利波特魔法世界™</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">必玩</span>
+            </div>
+            <div class="spot-time">13:00-17:00</div>
+            <p class="spot-desc">霍格華茲城堡、奶油啤酒、魔法杖體驗</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">設施介紹</a>
+              <a href="#" class="btn btn-outline">等候時間</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🥩</div>
+          <div class="spot-content">
+            <h4 class="spot-title">焼肉 力丸 なんば千日前店</h4>
+            <div class="spot-meta">
+              <span class="tag food">晚餐</span>
+            </div>
+            <div class="spot-time">18:30</div>
+            <p class="spot-desc">牛五花與內臟拼盤，CP 值超高的燒肉名店</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">線上訂位</a>
+              <a href="#" class="btn btn-outline">菜單參考</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 自駕 -->
+  <div id="day3" class="day-card fade-in">
+    <div class="day-header" onclick="toggleDay(this)" style="background:linear-gradient(135deg, #66bb6a, #4a9eff)">
+      <div class="day-info">
+        <h3>Day 3 • 自駕山林之旅</h3>
+        <p>木津市場 → 勝尾寺達摩祈福 → 箕面瀑布 → 溫泉足湯</p>
+      </div>
+      <button class="toggle-btn">展開詳情</button>
+    </div>
+    <div class="day-content">
+      <div class="spots-grid">
+        <div class="spot-card">
+          <div class="spot-image">🚗</div>
+          <div class="spot-content">
+            <h4 class="spot-title">租車出發</h4>
+            <div class="spot-meta">
+              <span class="tag transport">租車</span>
+            </div>
+            <div class="spot-time">07:00 取車</div>
+            <p class="spot-desc">NISSAN Rent A Car 難波 OCAT 取車，開始山林探索</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">取車地點</a>
+              <a href="#" class="btn btn-outline">租車確認</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🐟</div>
+          <div class="spot-content">
+            <h4 class="spot-title">木津市場</h4>
+            <div class="spot-meta">
+              <span class="tag food">早餐</span>
+            </div>
+            <div class="spot-time">07:30-08:40</div>
+            <p class="spot-desc">清晨市場：海鮮丼、玉子燒、鰻魚飯，體驗大阪人日常</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">市場導航</a>
+              <a href="#" class="btn btn-outline">推薦攤位</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🎯</div>
+          <div class="spot-content">
+            <h4 class="spot-title">勝尾寺</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">寺院</span>
+            </div>
+            <div class="spot-time">09:30-11:20</div>
+            <p class="spot-desc">滿山達摩人偶，祈求勝運不倒，別忘御朱印與小達摩</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">寺院導航</a>
+              <a href="#" class="btn btn-outline">參拜須知</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">💧</div>
+          <div class="spot-content">
+            <h4 class="spot-title">箕面瀑布步道</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">自然</span>
+            </div>
+            <div class="spot-time">11:40-13:20</div>
+            <p class="spot-desc">瀑布步道 20 分鐘，季節限定炸楓葉點心，負離子滿滿</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">步道入口</a>
+              <a href="#" class="btn btn-outline">停車資訊</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">♨️</div>
+          <div class="spot-content">
+            <h4 class="spot-title">箕面溫泉足湯</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">溫泉</span>
+            </div>
+            <div class="spot-time">13:30-14:30</div>
+            <p class="spot-desc">足湯放鬆疲憊雙腳，或升級大江戶溫泉物語日歸方案</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">溫泉導航</a>
+              <a href="#" class="btn btn-outline">日歸票價</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🐟</div>
+          <div class="spot-content">
+            <h4 class="spot-title">還車 & 鰻魚晚餐</h4>
+            <div class="spot-meta">
+              <span class="tag food">晚餐</span>
+            </div>
+            <div class="spot-time">16:00 還車 → 18:00 晚餐</div>
+            <p class="spot-desc">梅田還車後，阪神百貨 9F「Sumiyaki Unagi UOI」現烤鰻魚飯</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">還車導航</a>
+              <a href="#" class="btn btn-outline">餐廳資訊</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div id="day4" class="day-card fade-in">
+    <div class="day-header" onclick="toggleDay(this)" style="background:linear-gradient(135deg, #9c27b0, #673ab7)">
+      <div class="day-info">
+        <h3>Day 4 • 古蹟巡禮與購物血拼</h3>
+        <p>大阪城主塔 → 大阪城公園 → 心齋橋商圈 → 大阪燒晚餐</p>
+      </div>
+      <button class="toggle-btn">展開詳情</button>
+    </div>
+    <div class="day-content">
+      <div class="spots-grid">
+        <div class="spot-card">
+          <div class="spot-image">🏯</div>
+          <div class="spot-content">
+            <h4 class="spot-title">大阪城主塔</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">古蹟</span>
+            </div>
+            <div class="spot-time">09:00-11:00</div>
+            <p class="spot-desc">登主塔觀景，了解豐臣秀吉時代歷史，俯瞰大阪市景</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">城堡導航</a>
+              <a href="#" class="btn btn-outline">門票資訊</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🌳</div>
+          <div class="spot-content">
+            <h4 class="spot-title">大阪城公園</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">公園</span>
+            </div>
+            <div class="spot-time">11:00-12:00</div>
+            <p class="spot-desc">護城河畔散步，梅林與櫻花園，拍攝壯麗城郭全景</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">拍照景點</a>
+              <a href="#" class="btn btn-outline">公園設施</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🛍️</div>
+          <div class="spot-content">
+            <h4 class="spot-title">心齋橋筋商店街</h4>
+            <div class="spot-meta">
+              <span class="tag shop">購物</span>
+            </div>
+            <div class="spot-time">13:30-16:30</div>
+            <p class="spot-desc">老字號與時尚品牌並存，免稅購物超方便，伴手禮一次買齊</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">商圈地圖</a>
+              <a href="#" class="btn btn-outline">免稅指南</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🏬</div>
+          <div class="spot-content">
+            <h4 class="spot-title">Shinsaibashi Big Step</h4>
+            <div class="spot-meta">
+              <span class="tag shop">購物</span>
+            </div>
+            <div class="spot-time">16:30-17:30</div>
+            <p class="spot-desc">年輕潮流聖地，街頭藝術裝置，復古遊戲機台</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">商場導航</a>
+              <a href="#" class="btn btn-outline">樓層指南</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🥞</div>
+          <div class="spot-content">
+            <h4 class="spot-title">Okonomiyaki Kiji</h4>
+            <div class="spot-meta">
+              <span class="tag food">晚餐</span>
+            </div>
+            <div class="spot-time">17:30-19:00</div>
+            <p class="spot-desc">梅田空中庭園地下名店，現場鐵板直火，推薦豬肉海鮮綜合</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">餐廳導航</a>
+              <a href="#" class="btn btn-outline">候位攻略</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🌃</div>
+          <div class="spot-content">
+            <h4 class="spot-title">梅田夜景</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">夜景</span>
+            </div>
+            <div class="spot-time">19:30-21:00</div>
+            <p class="spot-desc">空中庭園或摩天輪，俯瞰大阪夜晚燈火，完美結束一天</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">夜景景點</a>
+              <a href="#" class="btn btn-outline">營業時間</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div id="day5" class="day-card fade-in">
+    <div class="day-header" onclick="toggleDay(this)" style="background:linear-gradient(135deg, #e91e63, #f44336)">
+      <div class="day-info">
+        <h3>Day 5 • 告別大阪</h3>
+        <p>退房寄物 → 新世界散策 → 通天閣 → 告別午餐 → 機場返程</p>
+      </div>
+      <button class="toggle-btn">展開詳情</button>
+    </div>
+    <div class="day-content">
+      <div class="spots-grid">
+        <div class="spot-card">
+          <div class="spot-image">🧳</div>
+          <div class="spot-content">
+            <h4 class="spot-title">飯店退房</h4>
+            <div class="spot-meta">
+              <span class="tag transport">行李</span>
+            </div>
+            <div class="spot-time">09:00 退房</div>
+            <p class="spot-desc">寄放行李於飯店櫃檯，輕鬆開始最後一天行程</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">寄物服務</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🎌</div>
+          <div class="spot-content">
+            <h4 class="spot-title">新世界散策</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">街區</span>
+            </div>
+            <div class="spot-time">09:30-10:20</div>
+            <p class="spot-desc">昭和復古氛圍，串炸老店林立，霓虹招牌超好拍</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">新世界導航</a>
+              <a href="#" class="btn btn-outline">拍照景點</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🗼</div>
+          <div class="spot-content">
+            <h4 class="spot-title">通天閣</h4>
+            <div class="spot-meta">
+              <span class="tag attraction">地標</span>
+            </div>
+            <div class="spot-time">10:30-11:30</div>
+            <p class="spot-desc">大阪象徵性地標，登塔俯瞰街景，比利肯神像祈福</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">購買門票</a>
+              <a href="#" class="btn btn-outline">觀景台資訊</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🥞</div>
+          <div class="spot-content">
+            <h4 class="spot-title">Chibo 大阪燒</h4>
+            <div class="spot-meta">
+              <span class="tag food">告別午餐</span>
+            </div>
+            <div class="spot-time">12:00-13:00</div>
+            <p class="spot-desc">道頓堀本店，多款創意大阪燒，為旅程畫下美味句點</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">餐廳訂位</a>
+              <a href="#" class="btn btn-outline">推薦菜單</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">🛂</div>
+          <div class="spot-content">
+            <h4 class="spot-title">取行李 → 前往機場</h4>
+            <div class="spot-meta">
+              <span class="tag transport">返程</span>
+            </div>
+            <div class="spot-time">13:30 出發</div>
+            <p class="spot-desc">飯店取行李，地鐵至難波轉南海電鐵，預留充足時間</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">機場交通</a>
+              <a href="#" class="btn btn-outline">航班確認</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image">✈️</div>
+          <div class="spot-content">
+            <h4 class="spot-title">關西機場離境</h4>
+            <div class="spot-meta">
+              <span class="tag transport">航班</span>
+            </div>
+            <div class="spot-time">16:20 CX565</div>
+            <p class="spot-desc">國泰航空 CX565，18:15 抵達台灣，滿載回憶歸來</p>
+            <div class="spot-actions">
+              <a href="#" class="btn btn-primary">航班動態</a>
+              <a href="#" class="btn btn-outline">免稅購物</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 快速導航 -->
+<div class="quick-nav">
+  <a href="#day1" class="quick-day">D1</a>
+  <a href="#day2" class="quick-day">D2</a>
+  <a href="#day3" class="quick-day">D3</a>
+  <a href="#day4" class="quick-day">D4</a>
+  <a href="#day5" class="quick-day">D5</a>
+</div>
+
+<!-- 頁尾 -->
+<div class="footer">
+  <p>🌸 祝你大阪之旅愉快！記得留下美好回憶 🏯</p>
+  <small>※ 行程僅供參考，請依當日實際交通與營業狀況調整</small>
+</div>
+
+<script>
+// 切換日程展開/收合
+function toggleDay(header) {
+  const dayCard = header.closest('.day-card');
+  dayCard.classList.toggle('expanded');
+  const btn = header.querySelector('.toggle-btn');
+  btn.textContent = dayCard.classList.contains('expanded') ? '收合詳情' : '展開詳情';
+}
+
+// 平滑滾動
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // 自動展開該日程
+      setTimeout(() => {
+        target.classList.add('expanded');
+        const btn = target.querySelector('.toggle-btn');
+        if (btn) btn.textContent = '收合詳情';
+      }, 500);
+    }
+  });
+});
+
+// 滾動動畫
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => {
+  observer.observe(el);
+});
+
+// 預設展開第一天
+document.getElementById('day1').classList.add('expanded');
+</script>
+</body>
+</html>
